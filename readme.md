@@ -8,7 +8,7 @@
 - Personal Access tokens can only be generated once, hence you can copy it to either your notepad or a safe location.
 - If at any point you feel your access token is compromised you can delete the token.
 
-# Configure Github Locally
+## Configure Github Locally
 ```
 - git config --global user.name “username”
 - git config --global user.email “email”
@@ -26,3 +26,18 @@
 - git pull or push will ask for user details again
 
 ```
+# Set Personal Token Parmanetly for a repo
+
+```
+- git config --global credential.helper cache
+- the above command cache the credentials just created to avoid consistent request for password
+- You do not have to remember token or password again while pulling, commiting, pushing etc
+
+# Changing Token and Deleting Cache Token after Change
+
+- Go delete the token from your personal access token or edit it as you want
+- git config --global -unset credential.helper
+- The above command deletes the password and user details, hence git will require you to add the details again while pushing or pulling.
+
+```
+- Thanks

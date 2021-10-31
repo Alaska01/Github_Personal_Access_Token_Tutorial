@@ -8,6 +8,11 @@
 - Personal Access tokens can only be generated once, hence you can copy it to either your notepad or a safe location.
 - If at any point you feel your access token is compromised you can delete the token.
 
+## For Ubuntu 
+- If it is your first time installing VSCode on your system you can install git in the command line with the following commands before proceeding to config.
+
+$ sudo apt install git
+
 ## Configure Github Locally
 ```
 -$ git config --global user.name “username”

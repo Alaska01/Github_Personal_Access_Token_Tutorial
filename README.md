@@ -15,8 +15,8 @@ $ sudo apt install git
 
 ## Configure Github Locally
 ```
--$ git config --global user.name “username”
--$ git config --global user.email “email”
+-$ git config --global user.name "username"
+-$ git config --global user.email "email"
 - to list details use the command below
 -$ git config -l
 - Username and email should be displayed below upon the command
